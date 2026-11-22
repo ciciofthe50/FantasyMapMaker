@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fantasy Map Maker</title>
+<link rel="stylesheet" href="style.css">
+<header>
+  <div><span class="brand">✦</span> Fantasy Map Maker</div>
+  <div class="actions"><button id="export">Export world</button><button id="import">Import world</button><input id="file" type="file" accept=".json,application/json" hidden></div>
+</header>
+<main>
+  <div class="intro"><h1>World atlas</h1><p>Your cast, kingdoms, and story in one place.</p></div>
+  <nav aria-label="Atlas views">
+    <button data-view="cast">Cast</button><button data-view="map">Map</button><button data-view="timeline">Timeline</button>
+  </nav>
+  <p id="status" role="status" hidden></p>
+  <section id="view"></section>
+</main>
+<dialog id="editor">
+  <form id="form">
+    <h2 id="form-title"></h2><div id="fields"></div>
+    <div class="actions"><button type="button" id="remove" class="danger">Delete</button><button type="button" id="cancel">Cancel</button><button class="primary">Save</button></div>
+  </form>
+</dialog>
+<script src="app.js" defer></script>
+</html>
