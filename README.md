@@ -9,3 +9,7 @@ Open `index.html` in your browser. There are no dependencies or accounts.
 - **Timeline** keeps events ordered by chapter. Tag characters and places to show the event in their histories. Use decimal chapter numbers if you want to place an event between two existing ones.
 
 The app saves edits to local browser storage. Use **Export world** to back up your data or move between browsers, and **Import world** to restore it. Renaming or moving the app can change which storage the browser uses, so export first. The source repository contains the app. Your world data lives in the browser and any backups you choose to save.
+
+## Chronicle preview
+
+The new timeline-driven workbench lives in [`chronicle/`](chronicle/README.md). The original app above still runs unchanged. Export any existing world first, then use Chronicle’s Import button to carry it over.
